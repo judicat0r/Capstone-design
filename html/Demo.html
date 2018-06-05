@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- JQuery -->
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<!-- Semantic UI -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">	
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script> 
+	<!-- Standard Head -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../img/icon.png">
+	<!-- Index css -->
+	<link rel="stylesheet" type="text/css" href="../css/Demo.css">
+
+	<title>Illustrator Demo</title>
+</head>
+<body>
+	<!-- A header bar -->
+	<div class="ui fixed inverted menu">
+		<div class="ui container">
+			<a href="Demo.html" class="header item">
+				<img class="logo" src="../img/logo.png">
+				HYU Ilustrator Demo
+			</a>
+			<a href="../index.html" class="item">Home</a>
+	    	<a href="book.html" class="item">e-Book</a>
+		</div>
+	</div>
+
+	<!-- The main contents of the page -->
+	<div class="ui main container segment">
+		<!-- Text area input -->
+		<form class="ui form">
+			<p>Let's go ahead!</p>
+			<div class="field">
+				<label>&mdash;Short text&mdash;</label>
+				<textarea rows="2" id="text" placeholder="The quick brown fox jumped over the lazy dog." autofocus></textarea>
+			</div>
+			<!-- Submit button -->
+			<div class="ui right floated primary button" id="submit">Submit</div>
+			<br><br>
+		</form>
+	</div>
+	
+	<!-- A panel for errors to show up in -->
+	<div id="errors" class="ui container error message" style="display: none;">
+		<div class="header">header</div>
+		<p>text...</p>
+	</div>
+
+	<!-- Result area -->
+	<div class="ui container segment" id="results" style="display: none;">
+		<h3 class="ui center aligned header">Results</h3>
+			<div class="ui loading basic segment" id="result_load"><br><br></div>
+			<div class="ui three cards stackable" id="cards">
+				<!-- Analysis card -->
+			</div>
+	</div>
+
+	<!-- Image area -->
+	<div class="ui container segment" id="images" style="display: none;">
+		<h3 class="ui center aligned header">IMAGES</h3>
+			<div class="ui loading basic segment" id="image_load"><br><br></div>
+			<div class="ui five column doubling grid container" id="pics">
+				<!-- Images -->
+			</div>
+			<br><br><div class="ui loading basic segment" id="more" style="display: none;"></div>
+	</div>
+	<br><br><br>
+	
+	<!-- The footer of the page -->
+	<div class="ui inverted vertical footer segment" id="footer">
+		<div class="ui aligned container">
+			<p>HYU Ilustrator Demo uses Google NLP and Google Custom Search API</p>
+		</div>
+	</div>	
+	<script type="text/javascript" src="../js/Demo.js"></script>
+</body>
+</html>

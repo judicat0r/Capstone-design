@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>COA-illustrator</title>    
+  <script type="text/javascript" src="../js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+<!-- Semantic UI -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+<link rel="stylesheet" href="../css/Bookstyle.css">
+<link rel="shortcut icon" href="../img/icon.png">
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>  
+</head>
+<body>
+  <div class="ui fixed inverted menu">
+	  <div class="ui container">
+	    <a href="book.html" class="header item">
+	      <img class="logo" src="../img/logo.png">
+	      COA-illustrator
+	    </a>
+	    <a href="../index.html" class="item">Home</a>
+	    <a href="Demo.html" class="item">Demo</a>
+	  </div>
+	</div>
+
+	<!-- Main -->
+ <div class="ui text main container">
+	<h1 class="ui header">COA illustrator</h1>
+	<p>This is a prototype of the illustrator</p>
+	<p>This web is using Google NLP<i class="google drive icon"></i> and Google Image Search Engine<i class="google plus icon"></i></p>
+	<p>The result of this program may be incorrect.</p>
+	<br><br>
+	<div class="ui form">
+		<div class="field">
+				<label>Title</label>
+				<input type="text" placeholder="ex) Harry Potter" id="title">
+
+		  <label>Text</label>
+		    <textarea id="textarea" placeholder="Please write the texts here"></textarea>
+		</div>
+		<button class="ui right floated secondary button" id="view">
+  		OK
+		</button>
+    	<label for="attachment" class="ui icon button right floated">
+        <i class="file icon"></i> Open Text File
+    	  <input type="file" accept="text/plain" id="attachment" style="display:none">
+    	</label>
+	</div>
+    <br><br>
+    <div class="ui container">
+      <div class="ui error message hidden" id="error">
+        <i class="close icon"></i>
+          <div class="header">
+            You must write the texts!
+          </div>
+      </div>
+		</div>
+ </div>
+	<div class="flipbook-viewport test" style="display: none;">
+		<div class="container">
+					<div class="flipbook">
+						<div style="background-image:url(../img/cover.jpg)"></div>
+					</div>
+				</div>
+			</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js'></script>
+<script  src="../js/book.js"></script>
+</body>
+</html>
